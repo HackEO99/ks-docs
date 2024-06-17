@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Kingswood Scouts">
+    <meta name="description" content="Downloadable Resources for Kingswood Scouts">
     <meta name="author" content="Inovatik">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="" /> <!-- website name -->
-    <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <!-- OG Meta Tags -->
+    <meta property="og:site_name" content="" />
+    <meta property="og:site" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
     <meta property="og:type" content="article" />
 
     <!-- Website Title -->
@@ -29,88 +29,67 @@
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Favicon  -->
+    <!-- Favicon -->
     <link rel="icon" href="images/New-SL.png">
+
+    <style>
+        .navbar-custom {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            transition: background 0.3s ease, box-shadow 0.3s ease, top 0.3s;
+            padding: 0.5rem 1rem;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-custom.scrolled {
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-custom.hidden {
+            top: -100px;
+            /* Adjust based on the height of your navbar */
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            padding: 0.5rem 1rem;
+            line-height: 1.5;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+        }
+
+        .navbar-toggler {
+            padding: 0.25rem 0.5rem;
+        }
+
+        .card-body {
+            height: 100px;
+            /* Adjust the height as needed */
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
-
-    <!-- Preloader -->
-    <div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
-
-
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Corso</a> -->
-
-        <!-- Image Logo -->
         <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
-
-        <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
-        <!-- end of mobile menu toggle button -->
-
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#register">ABOUT US <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#description">PROGRAMME</a>
-                </li>
 
-                <!-- Dropdown Menu -->
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button"
-                        aria-haspopup="true" aria-expanded="false">DATE</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE
-                                DETAILS</span></a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS
-                                CONDITIONS</span></a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY
-                                POLICY</span></a>
-                    </div>
-                </li> -->
-                <!-- end of dropdown menu -->
-
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-                </li>
             </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
         </div>
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+    </nav>
 
+
+    <!-- end of navigation -->
 
     <!-- Header -->
     <header id="header" class="header">
@@ -122,65 +101,53 @@
                             <span id="clock"></span>
                         </div>
                         <h1>Downloads</h1>
-                        <p class="p-large">Do you feel like you're doing a lot of guess work when it comes to SEO for
-                            your website? Take the SEO training course to change that</p>
-                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn-solid-lg page-scroll w-100" href="#junior-scouts">Junior Scouts</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn-solid-lg page-scroll w-100" href="#senior-scouts">Senior Scouts</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn-solid-lg page-scroll w-100" href="#rovers">Rovers</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn-solid-lg page-scroll w-100" href="#masters">Masters</a>
+                            </div>
+                            <div class="col">
+                                <a class="btn-solid-lg page-scroll w-100" href="#common">Common</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Image Slider -->
         <div class="outer-container">
             <div class="slider-container">
                 <div class="swiper-container image-slider-1">
                     <div class="swiper-wrapper">
-
-                        <!-- Slide -->
                         <div class="swiper-slide">
                             <img class="img-fluid" src="images/details-slide-1.jpg" alt="alternative">
                         </div>
-                        <!-- end of slide -->
-
-                        <!-- Slide -->
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="images/details-slide-2.jpg" alt="alternative">
+                            <img class="img-fluid" src="images/details-slide-1.jpg" alt="alternative">
                         </div>
-                        <!-- end of slide -->
-
-                        <!-- Slide -->
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="images/details-slide-3.jpg" alt="alternative">
+                            <img class="img-fluid" src="images/details-slide-1.jpg" alt="alternative">
                         </div>
-                        <!-- end of slide -->
-
-                    </div> <!-- end of swiper-wrapper -->
-
-                    <!-- Add Arrows -->
+                    </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <!-- end of add arrows -->
-
-                </div> <!-- end of swiper-container -->
-            </div> <!-- end of slider-container -->
-        </div> <!-- end of outer-container -->
+                </div>
+            </div>
+        </div>
         <!-- end of image slider -->
 
-    </header> <!-- end of header -->
+    </header>
     <!-- end of header -->
 
-
-    <style>
-        .basic-3,
-        .slider-1 {
-            margin-top: 50px;
-            /* Adjust the value as needed */
-        }
-    </style>
 
 
     <!-- Partners -->
@@ -190,7 +157,6 @@
                 <div class="col-lg-12">
                     <p class="p-small" style="margin-top: 30px;"></p>
 
-                    <!-- Image Slider -->
                     <div class="slider-container">
                         <div class="swiper-container image-slider-2">
                             <div class="swiper-wrapper">
@@ -212,19 +178,14 @@
                                 <div class="swiper-slide">
                                     <img class="img-fluid" src="images/logo.png" alt="alternative">
                                 </div>
-                            </div> <!-- end of swiper-wrapper -->
-                        </div> <!-- end of swiper container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of partners -->
-
-
-
 
     <!-- Students -->
     <div class="basic-3">
@@ -240,33 +201,22 @@
                             the enduring legacy of our scouts who have thrived through the decades. Explore the timeless
                             values and exciting activities that continue to shape future generations.
                         </p>
-                        <a class="btn-solid-reg" href="images/KINGSWOOD SCOUTING HISTORY.pdf"
+                        <a class="btn-solid-reg"
+                            href="https://drive.google.com/file/d/1jUG_xwBsfC5BE9Nm8-OoNQ09cJfwwBY2/view?usp=sharing"
                             target="_blank">EXPLORE</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                    </div>
+                </div>
                 <div class="col-lg-6">
-                    <video class="img-fluid" controls>
-                        <source src="images/Scouts History Video2.0.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
+                    <iframe src="https://drive.google.com/file/d/1wAo9_by9h6rhovoJ4TSCXuykOL9m9h6y/preview" width="100%"
+                        height="315" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of students -->
 
-
-
-
-
-
-
-
-
-
-
     <!-- Takeaways -->
-    <div class="cards">
+    <div id="junior-scouts" class="cards">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -274,12 +224,36 @@
                     <p class="p-heading">Here are the main documents and forms that will be useful in the Junior Scouts
                         Section.
                     </p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="card">
+                        <a href="https://drive.google.com/file/d/1CLvosBPRbp5vrO2nNwT_FDj7kt5gAxGh/view?usp=sharing"
+                            target="_blank">
+                            <div class="card-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <H4 class="card-title">Junior Scout Membership Form</H4>
+                            <!-- <p>Membership Application form for new comers </p> -->
+                        </div>
+                    </div>
 
-                    <!-- Card -->
+                    <div class="card">
+                        <a href="https://drive.google.com/file/d/1HR3Q3-waDRJcX2VLSeYHTDxYsuNEKStU/view?usp=sharing"
+                            target="_blank">
+                            <div class="card-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <H4 class="card-title">Scout Membership Award Interview Form</h4>
+                            <p></p>
+                        </div>
+                    </div>
+
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -291,9 +265,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -305,10 +277,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -320,9 +289,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -334,44 +301,13 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <a href="path/to/your/page.html" target="_blank">
-                            <div class="card-image">
-                                <i class="fas fa-newspaper"></i>
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <h4 class="card-title">Document</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <a href="path/to/your/page.html" target="_blank">
-                            <div class="card-image">
-                                <i class="fas fa-newspaper"></i>
-                            </div>
-                        </a>
-                        <div class="card-body">
-                            <h4 class="card-title">Document</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of takeaways -->
 
-    <!-- Takeaways -->
-    <div class="cards">
+    <div id="senior-scouts" class="cards">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -379,12 +315,10 @@
                     <p class="p-heading">Here are the main documents and forms that will be useful in the Senior Scout
                         Section.
                     </p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
-
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -396,10 +330,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -411,10 +342,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -426,9 +354,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -440,9 +366,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -454,9 +378,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -468,17 +390,66 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of takeaways -->
 
+    <div id="rovers" class="cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Rovers</h2>
+                    <p class="p-heading">Here are the main documents and forms that will be useful in the Rovers
+                        Section.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <a href="path/to/your/page.html" target="_blank">
+                            <div class="card-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Document</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
 
-    <!-- Takeaways -->
-    <div class="cards">
+                    <div class="card">
+                        <a href="path/to/your/page.html" target="_blank">
+                            <div class="card-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Document</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="path/to/your/page.html" target="_blank">
+                            <div class="card-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">Document</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of takeaways -->
+
+    <div id="masters" class="cards">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -486,12 +457,51 @@
                     <p class="p-heading">Here are the main documents and forms that will be useful in the Scout Masters
                         Sections.
                     </p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="card">
+                        <a href="https://drive.google.com/file/d/1tIFXf3RP81quEQv00qcUBcfWITZf0anj/view?usp=sharing"
+                            target="_blank">
+                            <div class="card-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">APPLICATION FOR
+                                PHASE I (INTRODUCTION) COURSE</h4>
+                            <p></p>
+                        </div>
+                    </div>
 
-                    <!-- Card -->
+                    <div class="card">
+                        <a href="https://drive.google.com/file/d/12WAaB5wD9ec9uk5JkFpDFlLCL2W4fUd9/view?usp=sharing"
+                            target="_blank">
+                            <div class="card-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">APPLICATION FOR
+                                PHASE II COURSE</h4>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://drive.google.com/file/d/1GCjEo76Ub36FM8-wMV5PDB5ClG0GG-Me/view?usp=sharing"
+                            target="_blank">
+                            <div class="card-image">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">APPLICATION FOR WARRANT</h4>
+                            <p></p>
+                        </div>
+                    </div>
+
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -503,9 +513,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -517,10 +525,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -532,9 +537,24 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of takeaways -->
 
-                    <!-- Card -->
+    <div id="common" class="cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Common</h2>
+                    <p class="p-heading">Here are the main documents and forms that will be useful as common.
+
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -546,9 +566,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -560,10 +578,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
 
-
-                    <!-- Card -->
                     <div class="card">
                         <a href="path/to/your/page.html" target="_blank">
                             <div class="card-image">
@@ -575,255 +590,50 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end of takeaways -->
 
 
 
 
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Contact Details</h2>
-                        <p>For registration questions please get in touch using the contact details below. For any
-                            questions use the form.</p>
-                        <!-- <h3>Main Office Location</h3>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">22 Innovative, San Francisco, CA 94043, US</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-mobile-alt"></i>
-                                <div class="media-body">+44 68 554 332, &nbsp;&nbsp;<i
-                                        class="fas fa-mobile-alt"></i>&nbsp; +44 31 276 112</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="light-gray"
-                                        href="mailto:contact@zigo.com">contact@zigo.com</a> <i
-                                        class="fas fa-globe"></i><a class="light-gray"
-                                        href="#your-link">www.zigo.com</a></div>
-                            </li>
-                        </ul> -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-
-                    <!-- Contact Form -->
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <!-- <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required> I have read and agree
-                            to
-                            Corso's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
-                                href="terms-conditions.html">Terms Conditions</a>
-                            <div class="help-block with-errors"></div>
-                        </div> -->
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                    <script>
-                        document.getElementById('contactForm').addEventListener('submit', function (event) {
-                            event.preventDefault();
-
-                            var name = document.getElementById('cname').value;
-                            var email = document.getElementById('cemail').value;
-                            var message = document.getElementById('cmessage').value;
-
-                            var mailtoLink = 'mailto:kingswoodscoutsofficial@gmail.com' +
-                                '?subject=Contact Form Submission' +
-                                '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
-
-                            window.location.href = mailtoLink;
-                        });
-                    </script>
-
-                    <!-- <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to
-                            Corso's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
-                                href="terms-conditions.html">Terms Conditions</a>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form> -->
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-3 -->
-    <!-- end of contact -->
-
-
-    <!-- Footer -->
-    <!-- <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-col first">
-                        <h5>About Corso</h5>
-                        <p class="p-small">We're passionate about teaching people how to do better SEO for their online
-                            presence</p>
-                    </div> -->
-    <!-- </div>
-                  end of col -->
-    <!-- <div class="col-md-3">
-                    <div class="footer-col second">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
-    <!-- end of col
-                <div class="col-md-3">
-                    <div class="footer-col third">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="article-details.html">Article Details</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>  -->
-    <!-- end of col -->
-    <!-- <div class="col-md-3">
-                    <div class="footer-col fourth">
-                        <h5>Social Media</h5>
-                        <p class="p-small">For news & updates follow us</p>
-                        <a href="#your-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-pinterest-p"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#your-link">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div> -->
-    <!-- end of col -->
-    <!-- </div> -->
-    <!-- end of row -->
-    <!-- </div>  -->
-    <!-- end of container -->
-    <!-- </div>  -->
-    <!-- end of footer -->
-    <!-- end of footer -->
-
-
-    <!-- Copyright
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights
-                        reserved</p>
-                    <p class="p-small">Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </p>
-                </div> -->
-    <!-- end of col -->
-    <!-- </div> -->
-    <!-- enf of row -->
-    <!-- </div> -->
-    <!-- end of container -->
-    <!-- </div> -->
-    <!-- end of copyright -->
-    <!-- end of copyright -->
-
-
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/jquery.countdown.min.js"></script> <!-- The Final Countdown plugin for jQuery -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar-custom');
+
+        window.addEventListener('scroll', function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Downscroll
+                navbar.classList.add('hidden');
+            } else {
+                // Upscroll
+                navbar.classList.remove('hidden');
+            }
+            lastScrollTop = scrollTop;
+
+            // Optional: Add 'scrolled' class based on scroll position
+            if (scrollTop > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
