@@ -33,46 +33,13 @@
     <link rel="icon" href="images/New-SL.png">
 
     <style>
-        .navbar-custom {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            transition: background 0.3s ease, box-shadow 0.3s ease, top 0.3s;
-            padding: 0.5rem 1rem;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .navbar-custom.scrolled {
-            background: rgba(255, 255, 255, 0.6);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-custom.hidden {
-            top: -100px;
-            /* Adjust based on the height of your navbar */
-        }
-
-        .navbar-nav .nav-item .nav-link {
-            padding: 0.5rem 1rem;
-            line-height: 1.5;
-        }
-
-        .navbar-brand img {
-            height: 30px;
-        }
-
-        .navbar-toggler {
-            padding: 0.25rem 0.5rem;
-        }
-
         .card-body {
             height: 100px;
             /* Adjust the height as needed */
         }
 
         .btn-green {
-            background-color: #28a745;
+            background-color: #582e92;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
@@ -83,9 +50,10 @@
         }
 
         .btn-green:hover {
-            background-color: #218838;
-            color: white;
+            background-color: #ffffff;
+            color: #582e92;
             text-decoration: none;
+            border: 0.125rem solid #582e92;
         }
 
         @media (max-width: 767px) {
@@ -116,19 +84,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
 
-            </ul>
-        </div>
-    </nav>
 
 
     <!-- end of navigation -->
@@ -138,11 +94,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="text-container">
+                    <div class="text-container" style=" margin-top: 10px;">
                         <div class="countdown">
                             <span id="clock"></span>
+                            <img src="images/ks logo.png" style="width: 130px; margin-top: 10px; height: 110px;"
+                                alt="alternative">
+
                         </div>
-                        <h1>Resources</h1>
+                        <h1 style="color: #582E92; margin-bottom: 50px;">KINGSWOOD SCOUTS</h1>
+
                         <div class="row">
                             <div class="col">
                                 <a class="btn-solid-lg page-scroll w-100" href="#junior-scouts">Junior Scouts</a>
@@ -398,23 +358,16 @@
         const navbar = document.querySelector('.navbar-custom');
 
         window.addEventListener('scroll', function () {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
             if (scrollTop > lastScrollTop) {
-                // Downscroll
-                navbar.classList.add('hidden');
+                // Scrolling down
+                navbar.style.top = '-100px'; // Adjust this value to match your navbar height
             } else {
-                // Upscroll
-                navbar.classList.remove('hidden');
+                // Scrolling up
+                navbar.style.top = '0';
             }
             lastScrollTop = scrollTop;
-
-            // Optional: Add 'scrolled' class based on scroll position
-            if (scrollTop > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
         });
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -434,7 +387,7 @@
 
                             const cardImage = document.createElement('div');
                             cardImage.className = 'card-image';
-                            cardImage.innerHTML = '<i class="fas fa-newspaper"></i>';
+                            cardImage.innerHTML = '<i class="fas fa-sticky-note"></i>';
 
                             link.appendChild(cardImage);
 
