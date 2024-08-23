@@ -1,9 +1,3 @@
-/* Template: Corso - Free Training Course Landing Page Template
-   Author: Inovatik
-   Created: Nov 2019
-   Description: Master CSS file
-*/
-
 /*****************************************
 Table Of Contents:
 
@@ -1571,7 +1565,7 @@ input[type="checkbox"] {
 /**********************/
 /*     17. Footer     */
 /**********************/
-.footer {
+/* .footer {
   padding-top: 4.75rem;
   padding-bottom: 2rem;
   background: linear-gradient(
@@ -1581,9 +1575,9 @@ input[type="checkbox"] {
     ),
     url("../images/header-background.jpg") center center no-repeat;
   background-size: cover;
-}
+} */
 
-.footer .footer-col {
+/* .footer .footer-col {
   margin-bottom: 2.25rem;
 }
 
@@ -1621,7 +1615,7 @@ input[type="checkbox"] {
 
 .footer .fab:hover {
   color: #85b2ed;
-}
+} */
 
 /*************************/
 /*     18. Copyright     */
@@ -2251,3 +2245,97 @@ a:hover.back-to-top {
   /* end of extra pages */
 }
 /* end of min-width width 1200px */
+.footer {
+  padding: 2rem 0;
+  background-color: #582e92;
+  color: #fff;
+  text-align: center;
+}
+
+.footer .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer .social-icons li a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons li a:hover {
+  color: #85b2ed; /* Change to your hover color preference */
+}
+
+.footer .footer-text {
+  margin-top: 1rem;
+  font-size: 0.875rem; /* Adjusted font size */
+  color: #ccc;
+}
+/* Recent Events Styles */
+.recent-events {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.recent-events-title {
+  margin-bottom: 1rem;
+  color: #582e92;
+}
+
+.recent-events-subtitle {
+  color: #8d97ad;
+  margin-bottom: 2rem;
+}
+
+.recent-event-card {
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8ff;
+}
+
+.recent-event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recent-event-img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.recent-event-body {
+  padding: 1rem;
+}
+
+.recent-event-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #582e92;
+}
+
+.recent-event-text {
+  color: #8d97ad;
+  margin-bottom: 1rem;
+}
+
+.recent-event-link {
+  color: #582e92;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.recent-event-link:hover {
+  text-decoration: underline;
+}
