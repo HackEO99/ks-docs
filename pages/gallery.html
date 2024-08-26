@@ -244,70 +244,10 @@
     <!-- Gallery Section -->
     <div class="container">
         <div class="row">
-            <!-- <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h1 class="gallery-title">Gallery</h1>
-            </div> -->
-
-            <div align="center">
-                <button class="btn btn-default filter-button" data-filter="all">All</button>
-                <button class="btn btn-default filter-button" data-filter="set1">10th NSJ</button>
-                <button class="btn btn-default filter-button" data-filter="set2">JJPD MOC</button>
-                <button class="btn btn-default filter-button" data-filter="set3">Mal Dansala</button>
-                <button class="btn btn-default filter-button" data-filter="set4">Kanboree</button>
-                <button class="btn btn-default filter-button" data-filter="set5">First Aid Session</button>
-                <button class="btn btn-default filter-button" data-filter="set6">Pioneering Session</button>
-            </div>
-            <br />
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set1">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set3">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set3">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set1">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set3">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set5">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set6">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
+            <!-- Gallery items will be injected here by JavaScript -->
         </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -395,6 +335,47 @@
                 });
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // URL to your raw JSON file on GitHub
+            const jsonUrl = 'https://raw.githubusercontent.com/HackEO99/ks-docs/main/gallery.json';
+
+            fetch(jsonUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const galleryContainer = document.querySelector('.row');
+                    let galleryHTML = '';
+
+                    data.images.forEach(image => {
+                        galleryHTML += `
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ${image.category}">
+              <img src="${image.url}" class="img-responsive" alt="Gallery Image">
+            </div>`;
+                    });
+
+                    galleryContainer.innerHTML = galleryHTML;
+                })
+                .catch(error => console.error('Error fetching gallery images:', error));
+        });
+
+        $(document).ready(function () {
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value === "all") {
+                    $('.filter').show('1000');
+                } else {
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+        });
+
 
 
         $(document).ready(function () {
