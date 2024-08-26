@@ -414,7 +414,7 @@
 
 
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('https://github.com/HackEO99/ks-docs/blob/9d51c8cecfaca8cedb339eabd1ba7c9dd779fae8/pdfs.json')
+            fetch('https://raw.githubusercontent.com/HackEO99/ks-docs/9d51c8cecfaca8cedb339eabd1ba7c9dd779fae8/pdfs.json')
                 .then(response => response.json())
                 .then(data => {
                     const sections = ['junior_scouts', 'senior_scouts', 'rovers', 'masters', 'common'];

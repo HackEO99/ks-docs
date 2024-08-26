@@ -153,7 +153,7 @@
                             <div class="col"><a class="btn-solid-lgr page-scroll w-100" href="#aboutus">About
                                     Us</a></div>
                             <div class="col"><a class="btn-solid-lgr page-scroll w-100"
-                                    href="/pages/gallery.html">Gallery</a></div>
+                                    href="pages/gallery.html">Gallery</a></div>
                             <div class="col"><a class="btn-solid-lgr page-scroll w-100" href="#recent-events">Events</a>
                             </div>
                             <div class="col"><a class="btn-solid-lgr page-scroll w-100"
@@ -164,7 +164,7 @@
                                     Us</a>
                             </div>
                             <div class="col"><a class="btn-solid-lgr page-scroll w-100"
-                                    href="/pages/resources.html">Resources</a></div>
+                                    href="pages/resources.html">Resources</a></div>
                         </div>
                         <div class="row">
                             <div class="col">
@@ -359,7 +359,7 @@
 
         <div id="groupScoutTable" class="collapse">
             <table class="table table-bordered table-hover">
-                <img src="/images/president-scout-logo.png" style="width: 120px; margin-top: 10px; height: 170px;"
+                <img src="images/president-scout-logo.png" style="width: 120px; margin-top: 10px; height: 170px;"
                     alt="President Scout Award" style="max-width: 100%; height: auto; margin-bottom: 20px;">
                 <p>The President’s Scout Award is the highest rank in the Sri Lanka Scout Association. It is awarded
                     after completing a determined list of accomplishments.</p>
@@ -587,9 +587,9 @@
                     <h4 class="footer-header">Kingswood Scouts</h4>
                     <ul class="footer-links">
                         <li><a href="#aboutus">About Us</a></li>
-                        <li><a href="/pages/gallery.html">Gallery</a></li>
+                        <li><a href="pages/gallery.html">Gallery</a></li>
                         <li><a href="#recent-events">Events</a></li>
-                        <li><a href="/pages/resources.html" target="_blank">Resources</a></li>
+                        <li><a href="pages/resources.html" target="_blank">Resources</a></li>
                         <li><a href="https://docs.google.com/spreadsheets/d/1l5o0g5fZ192B2GDsncwqJsy5K8R49FYtQ1CBCzrfPa0/edit?usp=sharing"
                                 target="_blank">Member Records</a></li>
                         <li><a href="#contact-us">Contact Us</a></li>
@@ -612,7 +612,7 @@
 
                 <!-- Third Column (Logo) -->
                 <div class="col-md-4 text-center">
-                    <img src="/images/kingswood scout logo.png" alt="Kingswood Scouts Logo" class="footer-logo">
+                    <img src="images/kingswood scout logo.png" alt="Kingswood Scouts Logo" class="footer-logo">
                 </div>
             </div>
 
@@ -704,7 +704,7 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('https://github.com/HackEO99/ks-docs/blob/9d51c8cecfaca8cedb339eabd1ba7c9dd779fae8/events.json')
+            fetch('https://raw.githubusercontent.com/HackEO99/ks-docs/9d51c8cecfaca8cedb339eabd1ba7c9dd779fae8/events.json')
                 .then(response => response.json())
                 .then(events => {
                     const eventsContainer = document.getElementById('recent-events');
