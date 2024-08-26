@@ -449,6 +449,20 @@
         }
       );
   }
+  /* Collapsible Table - Patrol Leader’s Council 2024 */
+  const toggleButton = document.querySelector(".btn-toggle");
+  const toggleIcon = document.getElementById("toggleIcon");
+  const collapseElement = document.getElementById("plcTable");
+
+  if (toggleButton && toggleIcon && collapseElement) {
+    collapseElement.addEventListener("show.bs.collapse", function () {
+      toggleIcon.classList.add("rotate");
+    });
+
+    collapseElement.addEventListener("hide.bs.collapse", function () {
+      toggleIcon.classList.remove("rotate");
+    });
+  }
 
   function psubmitMSG(valid, msg) {
     if (valid) {

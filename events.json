@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Event Title 1",
+        "description": "Brief description of the event, highlighting key points.",
+        "image": "https://path-to-image/event-pic-1.jpg",
+        "link": "https://link-to-event-1"
+    },
+    {
+        "title": "Event Title 2",
+        "description": "Brief description of the event, highlighting key points.",
+        "image": "https://path-to-image/event-pic-2.jpg",
+        "link": "https://link-to-event-2"
+    }
+]

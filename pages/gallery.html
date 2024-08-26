@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the 2nd Kandy Kingswood Scout Group..">
+    <meta name="author" content="Kingswood Scouts">
+    <meta property="og:site_name" content="2nd Kandy Kingswood Scout Group" />
+    <meta property="og:title" content="2nd Kandy Kingswood Scout Group" />
+    <meta property="og:description"
+        content="Learn about the Kingswood Scouts' century-long legacy, recent events, and achievements." />
+    <meta property="og:image" content="/images/ks-logo.png" />
+    <meta property="og:url" content="https://kingswoodoldscouts.org/randles-scouts" />
+    <meta property="og:type" content="website" />
+    <title>2nd Kandy Kingswood Scout Group</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/fontawesome-all.css" rel="stylesheet">
+    <link href="/css/swiper.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/New-SL.png">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <style>
+        .gallery-title {
+            font-size: 36px;
+            color: #582e92;
+            text-align: center;
+            font-weight: 900;
+            margin-bottom: 70px;
+        }
+
+        .gallery-title:after {
+            content: "";
+            position: absolute;
+            width: 7.5%;
+            left: 46.5%;
+            height: 45px;
+            border-bottom: 1px solid #5e5e5e;
+        }
+
+        .filter-button {
+            font-size: 18px;
+            border: 1px solid #582e92;
+            border-radius: 5px;
+            text-align: center;
+            color: #582e92;
+            margin-bottom: 30px;
+        }
+
+        .filter-button:hover {
+            font-size: 18px;
+            border: 1px solid 582e92;
+            border-radius: 5px;
+            text-align: center;
+            color: #fff;
+            background-color: #582e92;
+
+        }
+
+        .btn-default:active .filter-button:active {
+            background-color: #582e92;
+            color: #582e92;
+        }
+
+        .port-image {
+            width: 100%;
+        }
+
+        .gallery_product {
+            margin-bottom: 30px;
+        }
+
+        .card-body {
+            height: 100px;
+            /* Adjust the height as needed */
+        }
+
+        .btn-green {
+            background-color: #582e92;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            opacity: 0.8;
+            font-weight: 700;
+            /* Add 30px space below the button */
+        }
+
+        .btn-green:hover {
+            background-color: #ffffff;
+            color: #582e92;
+            text-decoration: none;
+            border: 0.125rem solid #582e92;
+        }
+
+        @media (max-width: 820px) {
+            .btn-green {
+                padding: 8px 18px;
+                margin-bottom: 50px;
+                /* Ensure the 30px margin persists on smaller screens */
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .btn-green {
+                padding: 8px 18px;
+                margin-bottom: 65px;
+                /* Ensure the 30px margin persists on smaller screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .btn-green {
+                padding: 8px 18px;
+                margin-bottom: 50px;
+                /* Ensure the 30px margin persists on smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .btn-green {
+                padding: 7px 16px;
+                margin-bottom: 30px;
+                /* Ensure the 30px margin persists on smaller screens */
+            }
+        }
+
+        @media (max-width: 375px) {
+            .btn-green {
+                padding: 6px 14px;
+                margin-bottom: 30px;
+                /* Ensure the 30px margin persists on smaller screens */
+            }
+        }
+
+        @media (max-width: 320px) {
+            .btn-green {
+                padding: 5px 12px;
+                margin-bottom: 30px;
+                /* Ensure the 30px margin persists on smaller screens */
+            }
+
+
+
+            .header .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header .text-container {
+                text-align: center;
+            }
+
+            .outer-container,
+            .swiper-wrapper {
+                margin-top: 30px;
+                /* Add margin top to the image slider */
+            }
+
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Header -->
+    <header id="header" class="header-gal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- OKSA Web Button -->
+                    <div style="position: absolute; top: 10px; left: 10px;">
+                        <a href="https://kingswoodoldscouts.org/randles-scouts" class="btn-oksaw-web">Back to Main</a>
+                    </div>
+                    <div class="text-container" style="margin-top: 10px;">
+                        <div class="countdown">
+                            <span id="clock"></span>
+                            <img src="/images/kingswood scout logo.png"
+                                style="width: 120px; margin-top: 3px; height: 110px;" alt="Kingswood Scouts Logo">
+                        </div>
+                        <h1 style="color: #582E92; margin-bottom: 50px; margin-top: 50px; font-weight: 700;">Gallery
+                        </h1>
+                        <!-- <div class="row">
+                            <div class="col"><a class="btn-solid-lgr page-scroll w-100" href="#junior-scouts">About
+                                    Us</a></div>
+                            <div class="col"><a class="btn-solid-lgr page-scroll w-100"
+                                    href="#senior-scouts">Gallery</a></div>
+                            <div class="col"><a class="btn-solid-lgr page-scroll w-100" href="#rovers">Events</a></div>
+                            <div class="col"><a class="btn-solid-lgr page-scroll w-100" href="#rovers">Group Profile</a>
+                            </div>
+                            <div class="col"><a class="btn-solid-lgr page-scroll w-100" href="#masters">Contact Us</a>
+                            </div>
+                            <div class="col"><a class="btn-solid-lgr page-scroll w-100" href="/pages/resources.html"
+                                    target="_blank">Resources</a></div>
+                        </div> -->
+                        <!-- <div class="row">
+                            <div class="col">
+
+                                <a href="https://kingswoodoldscouts.org/" class="btn-oksaw-web">OKSA Web</a>
+
+                                <a class="btn-green"
+                                    href="https://docs.google.com/spreadsheets/d/1l5o0g5fZ192B2GDsncwqJsy5K8R49FYtQ1CBCzrfPa0/edit?usp=sharing"
+                                    target="_blank">Member Records</a>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </header>
+    <!-- end of header -->
+
+    <!-- Gallery Section -->
+    <div class="container">
+        <div class="row">
+            <!-- <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">Gallery</h1>
+            </div> -->
+
+            <div align="center">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="set1">10th NSJ</button>
+                <button class="btn btn-default filter-button" data-filter="set2">JJPD MOC</button>
+                <button class="btn btn-default filter-button" data-filter="set3">Mal Dansala</button>
+                <button class="btn btn-default filter-button" data-filter="set4">Kanboree</button>
+                <button class="btn btn-default filter-button" data-filter="set5">First Aid Session</button>
+                <button class="btn btn-default filter-button" data-filter="set6">Pioneering Session</button>
+            </div>
+            <br />
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set1">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set3">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set3">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set1">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set2">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set3">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set5">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter set6">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+
+
+
+                <!-- Social Links and Copyright -->
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/kingswoodscouts/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/kingswood_scouts/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a href="mailto:kingswoodscoutsofficial@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                        <p class="footer-text">Designed By Kingswood Scouts 2024 ©</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- end of Footer -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.btn-toggle');
+            const plcTable = document.getElementById('plcTable');
+            toggleButton.addEventListener('click', function () {
+                const icon = toggleButton.querySelector('.fas');
+                plcTable.classList.toggle('collapse');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+
+            var gallerySlider = new Swiper('.gallery-slider', {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.gallery-button-next',
+                    prevEl: '.gallery-button-prev',
+                },
+            });
+        });
+
+        // Back to Top Button
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.querySelector('.back-to-top');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) { // Show button after scrolling down 300px
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+
+            backToTopButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+        $(document).ready(function () {
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+                    $('.filter').show('1000');
+                } else {
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+
+        });
+
+    </script>
+    <a href="#" class="back-to-top">Back to Top</a>
+</body>
+
+</html>
