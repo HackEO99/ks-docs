@@ -703,6 +703,31 @@
             });
         });
 
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('https://github.com/HackEO99/ks-docs/blob/9d51c8cecfaca8cedb339eabd1ba7c9dd779fae8/events.json')
+                .then(response => response.json())
+                .then(events => {
+                    const eventsContainer = document.getElementById('recent-events');
+                    let eventsHTML = '';
+
+                    events.forEach(event => {
+                        eventsHTML += `
+                            <div class="col-md-4">
+                                <div class="recent-event-card">
+                                    <img class="recent-event-img" src="${event.image}" alt="${event.title}">
+                                    <div class="recent-event-body">
+                                        <h5 class="recent-event-title">${event.title}</h5>
+                                        <p class="recent-event-text">${event.description}</p>
+                                        <a href="${event.link}" class="recent-event-link">Read More</a>
+                                    </div>
+                                </div>
+                            </div>`;
+                    });
+
+                    eventsContainer.querySelector('.row').innerHTML = eventsHTML;
+                })
+                .catch(error => console.error('Error fetching events:', error));
+        });
 
 
 
