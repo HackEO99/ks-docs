@@ -301,52 +301,21 @@
     </div>
     <!-- end of Counter Section -->
 
-    <!-- Recent Events -->
-    <div id="recent-events" class="recent-events section bg-light">
+    <!-- Recent News -->
+    <div id="recent-news" class="recent-news-section bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="recent-events-title">Recent Events</h2>
-                    <p class="recent-events-subtitle">Catch up on our latest activities and achievements</p>
+                    <h2 class="recent-news-title">Recent News</h2>
+                    <p class="recent-news-subtitle">Stay updated with the latest news and announcements</p>
                 </div>
             </div>
-            <div class="row">
-                <!-- Event 1 -->
-                <div class="col-md-4">
-                    <div class="recent-event-card">
-                        <img class="recent-event-img" src="images/event-pic-1.jpg" alt="Event 1">
-                        <div class="recent-event-body">
-                            <h5 class="recent-event-title">Event Title 1</h5>
-                            <p class="recent-event-text">Brief description of the event, highlighting key points.</p>
-                            <a href="#" class="recent-event-link">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Event 2 -->
-                <div class="col-md-4">
-                    <div class="recent-event-card">
-                        <img class="recent-event-img" src="images/event-pic-1.jpg" alt="Event 2">
-                        <div class="recent-event-body">
-                            <h5 class="recent-event-title">Event Title 2</h5>
-                            <p class="recent-event-text">Brief description of the event, highlighting key points.</p>
-                            <a href="#" class="recent-event-link">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Event 3 -->
-                <div class="col-md-4">
-                    <div class="recent-event-card">
-                        <img class="recent-event-img" src="images/event-pic-1.jpg" alt="Event 3">
-                        <div class="recent-event-body">
-                            <h5 class="recent-event-title">Event Title 3</h5>
-                            <p class="recent-event-text">Brief description of the event, highlighting key points.</p>
-                            <a href="#" class="recent-event-link">Read More</a>
-                        </div>
-                    </div>
-                </div>
+            <div id="recent-news-cards" class="row">
+                <!-- Dynamic content will be inserted here -->
             </div>
         </div>
     </div>
+
 
     <!-- end of Recent Events -->
 
@@ -705,33 +674,50 @@
         });
 
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // URL to your raw JSON file on GitHub
-            const jsonUrl = 'https://raw.githubusercontent.com/HackEO99/ks-docs/9d51c8cecfaca8cedb339eabd1ba7c9dd779fae8/events.json';
-
-            fetch(jsonUrl)
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('https://raw.githubusercontent.com/HackEO99/ks-docs/9d51c8cecfaca8cedb339eabd1ba7c9dd779fae8/events.json')
                 .then(response => response.json())
                 .then(data => {
-                    const eventsContainer = document.getElementById('recent-events').querySelector('.row');
-                    let eventsHTML = '';
+                    const container = document.getElementById('recent-news-cards');
+                    data.recent_news.forEach(news => {
+                        const card = document.createElement('div');
+                        card.className = 'col-md-4';
 
-                    data.events.forEach(event => {
-                        eventsHTML += `
-                      <div class="col-md-4">
-                        <div class="recent-event-card">
-                          <img class="recent-event-img" src="${event.image}" alt="${event.title}">
-                          <div class="recent-event-body">
-                            <h5 class="recent-event-title">${event.title}</h5>
-                            <p class="recent-event-text">${event.description}</p>
-                            <a href="${event.link}" class="recent-event-link">Read More</a>
-                          </div>
-                        </div>
-                      </div>`;
+                        const newsCard = document.createElement('div');
+                        newsCard.className = 'recent-news-card';
+
+                        const img = document.createElement('img');
+                        img.className = 'recent-news-img';
+                        img.src = news.image;
+                        img.alt = news.title;
+
+                        const cardBody = document.createElement('div');
+                        cardBody.className = 'recent-news-body';
+
+                        const cardTitle = document.createElement('h5');
+                        cardTitle.className = 'recent-news-title-card';
+                        cardTitle.textContent = news.title;
+
+                        const cardDescription = document.createElement('p');
+                        cardDescription.className = 'recent-news-text';
+                        cardDescription.textContent = news.description;
+
+                        const link = document.createElement('a');
+                        link.className = 'recent-news-link';
+                        link.href = news.link;
+                        link.textContent = 'Read More';
+
+                        cardBody.appendChild(cardTitle);
+                        cardBody.appendChild(cardDescription);
+                        cardBody.appendChild(link);
+
+                        newsCard.appendChild(img);
+                        newsCard.appendChild(cardBody);
+                        card.appendChild(newsCard);
+
+                        container.appendChild(card);
                     });
-
-                    eventsContainer.innerHTML = eventsHTML;
-                })
-                .catch(error => console.error('Error fetching events:', error));
+                });
         });
 
 

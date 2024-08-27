@@ -1,14 +1,22 @@
-[
-    {
-        "title": "New Group committee for the year 2024/25",
-        "description": "While bidding farewell to the past committee We are proud to announce the new committee for the year 2024/25",
-        "image": "https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/447511179_442485451872339_2947090127371268494_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cOBsiGAaWIoQ7kNvgGZIQAI&_nc_ht=scontent.fcmb1-2.fna&oh=00_AYCMZtA7V42G4__KYDDOOrHRiql6cZTMhEwQMOujrzQ9rQ&oe=66D24803",
-        "link": "https://www.facebook.com/share/p/obhP18WT3Qjp3C93/"
-    },
-    {
-        "title": "Annual Dansala",
-        "description": "Belimal and ice cream dansala organised by 2nd Kandy Kingswood Scout Group has been successfully concluded on 23rd of May 2024",
-        "image": "https://imgur.com/a/VYE28MW",
-        "link": "https://www.facebook.com/share/p/4Cxt18rc2uy4Nkea/"
-    }
-]
+{
+    "recent_events": [
+        {
+            "title": "Annual Dansala",
+            "description": "Belimal and ice cream dansala organised by 2nd Kandy Kingswood Scout Group has been successfully concluded on 23rd of May 2024",
+            "image": "https://imgur.com/a/VYE28MW",
+            "link": "https://www.facebook.com/share/p/4Cxt18rc2uy4Nkea/"
+        },
+        {
+            "title": "Event Title 2",
+            "description": "Brief description of the event, highlighting key points.",
+            "image": "https://example.com/path/to/event-pic-2.jpg",
+            "link": "#"
+        },
+        {
+            "title": "Event Title 3",
+            "description": "Brief description of the event, highlighting key points.",
+            "image": "https://example.com/path/to/event-pic-3.jpg",
+            "link": "#"
+        }
+    ]
+}

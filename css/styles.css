@@ -2470,25 +2470,25 @@ a:hover.back-to-top {
   color: #333;
 }
 
-/* Recent Events Styles */
-.recent-events {
+/* Recent News Styles */
+.recent-news-section {
   padding-top: 3rem;
   padding-bottom: 5rem;
 }
 
-.recent-events-title {
+.recent-news-title {
   margin-bottom: 1rem;
   color: #582e92;
   font-size: 2rem;
 }
 
-.recent-events-subtitle {
+.recent-news-subtitle {
   color: #8d97ad;
   margin-bottom: 2rem;
   font-size: 1.125rem;
 }
 
-.recent-event-card {
+.recent-news-card {
   border: none;
   border-radius: 0.5rem;
   transition: transform 0.2s ease-in;
@@ -2496,126 +2496,123 @@ a:hover.back-to-top {
   background-color: #f8f8ff;
 }
 
-.recent-event-card:hover {
+.recent-news-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.recent-event-img {
+.recent-news-img {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   width: 100%;
   height: auto;
 }
 
-.recent-event-body {
+.recent-news-body {
   padding: 1rem;
 }
 
-.recent-event-title {
+.recent-news-title-card {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
   color: #582e92;
 }
 
-.recent-event-text {
+.recent-news-text {
   color: #8d97ad;
   margin-bottom: 1rem;
 }
 
-.recent-event-link {
+.recent-news-link {
   color: #582e92;
   font-weight: 500;
   text-decoration: none;
 }
 
-/* Responsive Styles */
+.recent-news-link:hover {
+  text-decoration: underline;
+}
 
-/* iPhone (375x667) & Pixel 7 (412x915) */
+/* Responsive Styles */
 @media only screen and (max-width: 425px) {
-  .recent-events-title {
+  .recent-news-title {
     font-size: 1.75rem;
   }
 
-  .recent-events-subtitle {
+  .recent-news-subtitle {
     font-size: 1rem;
   }
 
-  .recent-event-title {
+  .recent-news-title-card {
     font-size: 1.125rem;
   }
 
-  .recent-event-text {
+  .recent-news-text {
     font-size: 0.875rem;
   }
 
-  .recent-events {
+  .recent-news-section {
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
-  .recent-event-body {
+  .recent-news-body {
     margin-bottom: 25px;
   }
 }
 
-/* Samsung A50 (360x740) & Samsung S8 (360x740) */
 @media only screen and (max-width: 375px) {
-  .recent-events-title {
+  .recent-news-title {
     font-size: 1.5rem;
   }
 
-  .recent-events-subtitle {
+  .recent-news-subtitle {
     font-size: 0.875rem;
   }
 
-  .recent-event-title {
+  .recent-news-title-card {
     font-size: 1rem;
   }
 
-  .recent-event-text {
+  .recent-news-text {
     font-size: 0.75rem;
   }
 
-  .recent-events {
+  .recent-news-section {
     padding-top: 1.5rem;
     padding-bottom: 2.5rem;
   }
-  .recent-event-body {
+  .recent-news-body {
     margin-bottom: 25px;
   }
 }
 
-/* iPad Mini & iPad Air & iPad Pro (768x1024) */
 @media only screen and (max-width: 1024px) {
-  .recent-events-title {
+  .recent-news-title {
     font-size: 2rem;
   }
 
-  .recent-events-subtitle {
+  .recent-news-subtitle {
     font-size: 1.125rem;
   }
 
-  .recent-event-title {
+  .recent-news-title-card {
     font-size: 1.25rem;
   }
 
-  .recent-event-text {
+  .recent-news-text {
     font-size: 0.875rem;
   }
 
-  .recent-events {
+  .recent-news-section {
     padding-top: 2.5rem;
     padding-bottom: 4rem;
   }
-  .recent-event-body {
+  .recent-news-body {
     margin-bottom: 25px;
   }
 }
 
-.recent-event-link:hover {
-  text-decoration: underline;
-}
 /* counter section */
 .counter-section {
   padding-top: 3rem;
