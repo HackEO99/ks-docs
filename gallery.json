@@ -1,17 +1,22 @@
 {
-    "images": [
+  "images": [
       {
-        "url": "images/header-background.jpg",
-        "category": "set6"
+          "imagePath": "images/header-background.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/HackEO99/ks-docs/main/images/header-background.jpgg",
+          "category": "set6",
+          "alt": "Image description 1"
       },
       {
-        "url": "images/header-background.jpg",
-        "category": "set6"
+          "imagePath": "images/header-background.jpg",
+          "imageUrl": "https://github.com/HackEO99/ks-docs/blob/8b6d734bd13f91c6f0605b7e4170b56526aa19e6/images/header-background.jpg",
+          "category": "set6",
+          "alt": "Image description 2"
       },
       {
-        "url": "images/header-background.jpg",
-        "category": "set6"
+          "imagePath": "images/header-background.jpg",
+          "imageUrl": "https://raw.githubusercontent.com/HackEO99/ks-docs/main/images/header-background.jpgg",
+          "category": "set6",
+          "alt": "Image description 3"
       }
-    ]
-  }
-  
+  ]
+}
