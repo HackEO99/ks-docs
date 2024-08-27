@@ -3,13 +3,13 @@
         {
             "title": "Event Title Test11",
             "description": "Test Brief description of the event, highlighting key points.",
-            "image": "https://imgur.com/a/oe5qX3l",
+            "image": "https://photos.app.goo.gl/hjXYFiKGVRnMysDcA",
             "link": "https://www.nsj2024.com/"
         },
         {
             "title": "Event Title 2",
             "description": "Brief description of the event, highlighting key points.",
-            "image": "https://example.com/path/to/event-pic-2.jpg",
+            "image": "https://imgur.com/a/oe5qX3l",
             "link": "#"
         }
     ]
