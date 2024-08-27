@@ -301,21 +301,20 @@
     </div>
     <!-- end of Counter Section -->
 
-    <!-- Recent News -->
-    <div id="recent-news" class="recent-news-section bg-light">
+    <!-- Recent Events -->
+    <div id="recent-events" class="recent-events-section bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="recent-news-title">Recent News</h2>
-                    <p class="recent-news-subtitle">Stay updated with the latest news and announcements</p>
+                    <h2 class="recent-events-title">Recent Events</h2>
+                    <p class="recent-events-subtitle">Catch up on our latest activities and achievements</p>
                 </div>
             </div>
-            <div id="recent-news-cards" class="row">
+            <div id="recent-events-cards" class="row">
                 <!-- Dynamic content will be inserted here -->
             </div>
         </div>
     </div>
-
 
     <!-- end of Recent Events -->
 
@@ -678,47 +677,48 @@
             fetch('https://raw.githubusercontent.com/HackEO99/ks-docs/9d51c8cecfaca8cedb339eabd1ba7c9dd779fae8/events.json')
                 .then(response => response.json())
                 .then(data => {
-                    const container = document.getElementById('recent-news-cards');
-                    data.recent_news.forEach(news => {
+                    const container = document.getElementById('recent-events-cards');
+                    data.recent_events.forEach(event => {
                         const card = document.createElement('div');
                         card.className = 'col-md-4';
 
-                        const newsCard = document.createElement('div');
-                        newsCard.className = 'recent-news-card';
+                        const eventCard = document.createElement('div');
+                        eventCard.className = 'recent-events-card';
 
                         const img = document.createElement('img');
-                        img.className = 'recent-news-img';
-                        img.src = news.image;
-                        img.alt = news.title;
+                        img.className = 'recent-events-img';
+                        img.src = event.image;
+                        img.alt = event.title;
 
                         const cardBody = document.createElement('div');
-                        cardBody.className = 'recent-news-body';
+                        cardBody.className = 'recent-events-body';
 
                         const cardTitle = document.createElement('h5');
-                        cardTitle.className = 'recent-news-title-card';
-                        cardTitle.textContent = news.title;
+                        cardTitle.className = 'recent-events-title-card';
+                        cardTitle.textContent = event.title;
 
                         const cardDescription = document.createElement('p');
-                        cardDescription.className = 'recent-news-text';
-                        cardDescription.textContent = news.description;
+                        cardDescription.className = 'recent-events-text';
+                        cardDescription.textContent = event.description;
 
                         const link = document.createElement('a');
-                        link.className = 'recent-news-link';
-                        link.href = news.link;
+                        link.className = 'recent-events-link';
+                        link.href = event.link;
                         link.textContent = 'Read More';
 
                         cardBody.appendChild(cardTitle);
                         cardBody.appendChild(cardDescription);
                         cardBody.appendChild(link);
 
-                        newsCard.appendChild(img);
-                        newsCard.appendChild(cardBody);
-                        card.appendChild(newsCard);
+                        eventCard.appendChild(img);
+                        eventCard.appendChild(cardBody);
+                        card.appendChild(eventCard);
 
                         container.appendChild(card);
                     });
                 });
         });
+
 
 
 
