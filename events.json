@@ -1,16 +1,22 @@
 {
     "recent_events": [
         {
-            "title": "Event Title Test11",
-            "description": "Test Brief description of the event, highlighting key points.",
-            "image": "https://photos.app.goo.gl/hjXYFiKGVRnMysDcA",
-            "link": "https://www.nsj2024.com/"
+            "title": "10th National Scout Jamboree 2024",
+            "description": "Kingswood Scouts gathered in front of their ingenious campsite entrance, fashioned after a buzzing bee hive. Their teamwork and creativity are the nectar that sweetens the 10th National Scout Jamboree 2024 experience in Trincomalee, Sri Lanka. ",
+            "image": "images/header-background.jpg",
+            "link": "https://www.facebook.com/photo?fbid=380792328041652&set=a.131663202954567"
         },
         {
-            "title": "Event Title 2",
-            "description": "Brief description of the event, highlighting key points.",
-            "image": "https://imgur.com/a/oe5qX3l",
-            "link": "#"
+            "title": "110 Years of Kingswood Scouting",
+            "description": "Celebrating legacy.",
+            "image": "images/header-background.jpg",
+            "link": "https://www.facebook.com/kingswoodscouts/"
+        },
+        {
+            "title": "𝐋𝐞𝐚𝐝𝐞𝐫𝐬𝐡𝐢𝐩 𝐓𝐫𝐚𝐢𝐧𝐢𝐧𝐠 𝐏𝐫𝐨𝐠𝐫𝐚𝐦 ⚜️",
+            "description": "A leadership training program was  organized by the Old Kingswoodians Scout Association for the scout group’s senior scouts, with the aim of developing their leadership qualities and raising awareness about leadership.",
+            "image": "images/header-background.jpg",
+            "link": "https://www.facebook.com/photo/?fbid=348419254612293&set=pcb.348421397945412"
         }
     ]
 }
