@@ -1,21 +1,15 @@
 {
     "recent_events": [
         {
-            "title": "Annual Dansala",
-            "description": "Belimal and ice cream dansala organised by 2nd Kandy Kingswood Scout Group has been successfully concluded on 23rd of May 2024",
-            "image": "https://imgur.com/a/VYE28MW",
-            "link": "https://www.facebook.com/share/p/4Cxt18rc2uy4Nkea/"
+            "title": "Event Title Test11",
+            "description": "Test Brief description of the event, highlighting key points.",
+            "image": "https://imgur.com/a/oe5qX3l",
+            "link": "https://www.nsj2024.com/"
         },
         {
             "title": "Event Title 2",
             "description": "Brief description of the event, highlighting key points.",
             "image": "https://example.com/path/to/event-pic-2.jpg",
-            "link": "#"
-        },
-        {
-            "title": "Event Title 3",
-            "description": "Brief description of the event, highlighting key points.",
-            "image": "https://example.com/path/to/event-pic-3.jpg",
             "link": "#"
         }
     ]
