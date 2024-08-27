@@ -152,6 +152,46 @@ a:hover {
   text-decoration: none;
   transition: all 0.2s;
 }
+/* For screens with a maximum width of 1024px */
+@media (max-width: 1024px) {
+  .btn-solid-lg {
+    margin-bottom: 4px;
+    padding: 1.25rem 2.25rem; /* Adjust padding for this screen size */
+  }
+}
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .btn-solid-lg {
+    margin-bottom: 4px;
+    padding: 1.125rem 2rem; /* Adjust padding for this screen size */
+  }
+}
+
+/* For screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .btn-solid-lg {
+    margin-bottom: 4px;
+    padding: 1rem 1.75rem; /* Adjust padding for this screen size */
+  }
+}
+
+/* For screens with a maximum width of 375px */
+@media (max-width: 375px) {
+  .btn-solid-lg {
+    margin-bottom: 4px;
+    padding: 0.875rem 1.5rem; /* Adjust padding for this screen size */
+  }
+}
+
+/* For screens with a maximum width of 320px */
+@media (max-width: 320px) {
+  .btn-solid-lg {
+    margin-bottom: 4px;
+    padding: 0.75rem 1.25rem; /* Adjust padding for this screen size */
+  }
+}
+
 .btn-solid-lgr {
   display: inline-block;
   padding: 0.875rem 1.5rem;
@@ -1729,6 +1769,51 @@ input[type="checkbox"] {
   margin-top: 20px;
   margin-bottom: 30px;
   box-sizing: border-box;
+}
+
+/* For screens with a maximum width of 1024px */
+@media (max-width: 1024px) {
+  .btn-oksaw-web {
+    margin-top: 2px;
+    padding: 5px 10px;
+    margin-bottom: 8px; /* Adjust margin-bottom for this screen size */
+  }
+}
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .btn-oksaw-web {
+    margin-top: 2px;
+    padding: 5px 10px;
+    margin-bottom: 8px; /* Adjust margin-bottom for this screen size */
+  }
+}
+
+/* For screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .btn-oksaw-web {
+    margin-top: 2px;
+    padding: 5px 10px;
+    margin-bottom: 8px; /* Adjust margin-bottom for this screen size */
+  }
+}
+
+/* For screens with a maximum width of 375px */
+@media (max-width: 375px) {
+  .btn-oksaw-web {
+    margin-top: 2px;
+    padding: 5px 10px;
+    margin-bottom: 8px; /* Adjust margin-bottom for this screen size */
+  }
+}
+
+/* For screens with a maximum width of 320px */
+@media (max-width: 320px) {
+  .btn-oksaw-web {
+    margin-top: 2px;
+    padding: 5px 10px;
+    margin-bottom: 8px; /* Adjust margin-bottom for this screen size */
+  }
 }
 
 .btn-oksaw-web:hover {
