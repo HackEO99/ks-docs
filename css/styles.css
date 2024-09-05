@@ -2913,6 +2913,7 @@ a:hover.back-to-top {
 }
 
 /* President Scout Section */
+/* President Scout Section */
 
 .president-scout-section {
   margin: 2rem auto;
@@ -2988,6 +2989,29 @@ a:hover.back-to-top {
   display: block;
 }
 
+/* New Styling for the Small Button */
+.president-scout-section .btn-directory-link {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #0073aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.president-scout-section .btn-directory-link:hover {
+  background-color: #005f8d;
+  transform: translateY(-2px);
+}
+
+.president-scout-section .btn-directory-link:active {
+  background-color: #004f73;
+  transform: translateY(0);
+}
 /* Contact Us Section */
 /* Contact Us Section */
 .contact-container {
