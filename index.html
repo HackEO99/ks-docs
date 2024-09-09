@@ -324,8 +324,38 @@
     <!-- President Scouts Council Section -->
 
     <!-- President Scouts Council Section -->
-
     <div id="group-scout-section" class="group-scout-section section">
+        <button class="btn-toggle">
+            President Scout Award Winners 2023/2024 <i class="fas fa-chevron-down"></i>
+        </button>
+
+        <div id="groupScoutTable" class="collapse">
+            <table class="table table-bordered table-hover">
+                <img src="images/president-scout-logo.png" style="width: 120px; margin-top: 10px; height: 170px;"
+                    alt="President Scout Award" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+                <p>The President’s Scout Award is the highest rank in the Sri Lanka Scout Association. It is awarded
+                    after completing a determined list of accomplishments.</p>
+                <thead>
+                    <tr>
+                        <th>Name of President Scout</th>
+                    </tr>
+                </thead>
+                <tbody id="president-scouts-list">
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- New Button for President Scouts Directory with link -->
+        <a href="https://kingswoodoldscouts.org/president-scouts-directory/" target="_blank">
+            <button
+                style="margin-top: 20px; padding: 12px 24px; font-size: 1rem; background-color: #582e92; opacity:0.8; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
+                President Scouts Directory
+            </button>
+        </a>
+    </div>
+
+    <!-- <div id="group-scout-section" class="group-scout-section section">
         <button class="btn-toggle">
             President Scout Award Winners 2023/2024 <i class="fas fa-chevron-down"></i>
         </button>
@@ -368,15 +398,15 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
 
-        <!-- New Button for President Scouts Directory with link -->
-        <a href="https://kingswoodoldscouts.org/president-scouts-directory/" target="_blank">
-            <button
-                style="margin-top: 20px; padding: 12px 24px; font-size: 1rem; background-color: #582e92; opacity:0.8; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
-                President Scouts Directory
-            </button>
-        </a>
+    <!-- New Button for President Scouts Directory with link -->
+    <a href="https://kingswoodoldscouts.org/president-scouts-directory/" target="_blank">
+        <button
+            style="margin-top: 20px; padding: 12px 24px; font-size: 1rem; background-color: #582e92; opacity:0.8; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
+            President Scouts Directory
+        </button>
+    </a>
 
     </div>
 
@@ -624,6 +654,33 @@
 
     <!-- Custom Script -->
     <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch data from a JSON file
+            fetch('path-to-your-json-file.json')
+                .then(response => response.json())
+                .then(data => {
+                    const scoutsList = document.getElementById('president-scouts-list');
+
+                    // Check if the data structure is correct
+                    if (data.president_scouts && Array.isArray(data.president_scouts)) {
+                        // Loop through the list and create table rows
+                        data.president_scouts.forEach(scout => {
+                            const row = document.createElement('tr');
+                            const cell = document.createElement('td');
+                            cell.textContent = scout.name; // Assuming the JSON has a "name" field
+                            row.appendChild(cell);
+                            scoutsList.appendChild(row);
+                        });
+                    } else {
+                        console.error('Invalid data structure');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching the JSON data:', error);
+                });
+        });
+
         document.addEventListener('DOMContentLoaded', function () {
             const plcToggleButton = document.querySelector('#plc-section .btn-toggle');
             const plcTable = document.getElementById('plcTable');
