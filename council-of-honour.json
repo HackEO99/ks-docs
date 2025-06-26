@@ -1,0 +1,26 @@
+{
+  "council": [
+    { "rank": "Chairman", "name": "D.M.S.P. Devagiri" },
+    { "rank": "Secretary", "name": "W.G.S.N.B. Welivita" },
+    { "rank": "Treasurer", "name": "S. Aman" },
+    { "rank": "Assistant Chairman", "name": "W.A.S.U. Wickramarachchi" },
+    { "rank": "Quarter Master", "name": "W.T. Nimesh" },
+    { "rank": "Programme Coordinator", "name": "W.A.S.U. Wickramarachchi" },
+    { "rank": "Media Coordinator", "name": "E.M.C.S. Ekanayake" },
+    { "rank": "Headquarters Coordinator", "name": "J.J. Fernando" },
+
+    { "rank": "Committee Member", "name": "P.T.K.D. Fernando" },
+    { "rank": "Committee Member", "name": "H.A.S.H.B. Jayarathne" },
+    { "rank": "Committee Member", "name": "L.S. Wijerathne" },
+    { "rank": "Committee Member", "name": "M.B. Nissanka" },
+    { "rank": "Committee Member", "name": "S.V. Bandara" },
+    { "rank": "Committee Member", "name": "W.T. Nimesh" },
+    { "rank": "Committee Member", "name": "M. Eragoda" },
+    { "rank": "Committee Member", "name": "T.W.S.D. Waduge" },
+    { "rank": "Committee Member", "name": "D.M. Geeganage" },
+    { "rank": "Committee Member", "name": "W.M.Y.M.B.B. Wijekoon" },
+    { "rank": "Committee Member", "name": "E.M.C.S. Ekanayake" },
+    { "rank": "Committee Member", "name": "L.K.P.T. Weerasinghe" },
+    { "rank": "Committee Member", "name": "W.G.D.S. Thewnaka" }
+  ]
+}
