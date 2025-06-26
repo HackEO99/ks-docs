@@ -1,0 +1,9 @@
+{
+  "slides": [
+    { "src": "images/details-slide-1.jpg", "alt": "Slide 1" },
+    { "src": "images/details-slide-2.jpg", "alt": "Slide 2" },
+    { "src": "https://i.imgur.com/8Q5InOH.jpeg", "alt": "Cabana Night" },
+    { "src": "https://i.imgur.com/F8ZBI69.jpeg", "alt": "Group Photo" },
+    { "src": "https://i.imgur.com/RiChy8p.jpeg", "alt": "Outdoor Fun" }
+  ]
+}
