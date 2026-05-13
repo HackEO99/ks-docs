@@ -1,12 +1,12 @@
 {
   "council": [
     { "rank": "Chairman", "name": "W.A.S.U. Wickramarachchi" },
+     { "rank": "Committee Member", "name": "S.P.Devagiri" },
     { "rank": "Secretary", "name": "Sanuga Walivita" },
     { "rank": "Treasurer", "name": "S. Aman" },
   
     { "rank": "Quarter Master", "name": "W.T. Nimesh" },
-    { "rank": "Committee Member", "name": "S.P.Devagiri" },
-    { "rank": "Media Coordinator", "name": "E.M.C.S. Ekanayake" },
+       { "rank": "Media Coordinator", "name": "E.M.C.S. Ekanayake" },
     
     { "rank": "Committee Member", "name": "P.T.K.D. Fernando" },
        { "rank": "Committee Member", "name": "L.S. Wijerathne" },
